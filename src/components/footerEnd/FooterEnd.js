@@ -14,7 +14,7 @@ const FooterEnd = () => {
         <img src="/img/instragram.png" alt="zu" className="last" />
       </a>
       <div>
-        <p>COPYRIGHT nothingtotrash 2021 - TERMS & CONDITIONS PRIVACY POLICY</p>
+        <p>COPYRIGHT nothingtotrash 2024 - TERMS & CONDITIONS PRIVACY POLICY</p>
       </div>
     </div>
   );
