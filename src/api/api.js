@@ -1,1 +1,1 @@
-export const apiBaseUrl = process.env.REACT_APP_BACKEND_URL || "https://ntt-server-test.onrender.com/"
+export const apiBaseUrl = process.env.REACT_APP_BACKEND_URL || "https://api.render.com/deploy/srv-cnu4kuen7f5s73cebv50?key=ZC3G3KG2QZ8"
