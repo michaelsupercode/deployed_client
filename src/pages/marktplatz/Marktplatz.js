@@ -19,7 +19,7 @@ const Marktplatz = () => {
 
   let countZustandNeu = data.reduce((n, x) => n + (x.Zustand === "neu"), 0);
   let countZustandWieNeu = data.reduce(
-    (n, x) => n + (x.Zustand === "Wie neu"),
+    (n, x) => n + (x.Zustand === "wie neu"),
     0
   );
   let countZustandGebraucht = data.reduce(
@@ -27,7 +27,7 @@ const Marktplatz = () => {
     0
   );
   let countZustandDefekt = data.reduce(
-    (n, x) => n + (x.Zustand === "Defekt"),
+    (n, x) => n + (x.Zustand === "defekt"),
     0
   );
 

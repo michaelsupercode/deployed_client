@@ -1,0 +1,64 @@
+.marktlist {
+  width: 75%;
+}
+.marktlist .marktplatzitem {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(5px, 3vw, 50px);
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid rgb(209, 209, 209);
+  margin: 0 0 5% 5%;
+}
+.marktlist .marktplatzitem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.marktlist .marktplatzitem .text {
+  padding: 5%;
+}
+.marktlist .marktplatzitem .text h3 {
+  line-height: 2rem;
+  margin: 0 0 5% 0;
+}
+.marktlist .marktplatzitem .text div {
+  margin: 5% 0;
+}
+.marktlist .marktplatzitem .text div p {
+  width: 50%;
+  display: inline-block;
+  margin: 2% 0;
+}
+.marktlist .marktplatzitem .btn-primary {
+  width: 90%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .marktlist {
+    width: 100%;
+    margin: 0 5%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .marktlist {
+    width: 100%;
+    margin: 0 5%;
+  }
+  .marktlist .marktplatzitem {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .marktlist .marktplatzitem .text {
+    margin: 5%;
+  }
+  .marktlist .marktplatzitem div {
+    margin: 0 5%;
+  }
+  .marktlist .marktplatzitem div .btn-primary {
+    width: 100%;
+  }
+}/*# sourceMappingURL=marktplatzItem.css.map */

@@ -13,6 +13,7 @@ const Nav = () => {
       <div>
         <NavLink className="logo" to="/">nothingtotrash</NavLink>
         <NavLink to="/marktplatz">Marktplatz</NavLink>
+        <NavLink to="/ueberuns">Über Uns</NavLink>
       </div>
       <div>
         {token ? (
