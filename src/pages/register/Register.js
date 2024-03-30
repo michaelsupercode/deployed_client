@@ -29,7 +29,7 @@ const Register = () => {
   return (
     <section className="register-Sec">
       <div>
-        <h2>Registriere Dich & nimm Teil</h2>
+        <h2>Registriere Dich & Nimm Teil</h2>
         <article>
           <h2>Mit Email registrieren</h2>
           <form>
