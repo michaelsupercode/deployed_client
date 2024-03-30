@@ -5,7 +5,6 @@ import Nav from "./components/nav/Nav";
 
 import Home from "./pages/home/Home";
 import Marktplatz from "./pages/marktplatz/Marktplatz";
-import Ueberuns from "./pages/ueberuns/Ueberuns";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import AddProduct from "./pages/addProduct/AddProduct";
