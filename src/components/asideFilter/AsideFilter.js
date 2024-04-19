@@ -238,7 +238,7 @@ const AsideFilter = (props) => {
           />
           <div className="priceFlex-Div">
             <div>
-              <p>Min</p>
+              <p>min</p>
               <input
                 type="text"
                 value={`${values[0]}€`}
@@ -249,7 +249,7 @@ const AsideFilter = (props) => {
             </div>
             -
             <div>
-              <p>Max</p>
+              <p>max</p>
               <input
                 type="text"
                 value={`${values[1]}€`}
