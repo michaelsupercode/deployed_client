@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, createContext } from "react";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+
 import "./scss/main.scss";
 import Nav from "./components/nav/Nav";
 
@@ -14,6 +16,8 @@ import DetailPage from "./pages/detailPage/DetailPage";
 const newToken = createContext({});
 const newUserId = createContext({});
 const favorite = createContext({});
+
+if (process.env.NODE_ENV === 'production') disableReactDevTools ()
 
 function App() {
   const [favoritesItem, setFavoritesItem] = useState("");
