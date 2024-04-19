@@ -164,7 +164,7 @@ const AddProduct = () => {
 						name='Lieferung'
 						value={Lieferung}
 					/>
-					<label htmlFor='Lieferung'>nein</label>
+					<label htmlFor='Lieferung'>Nein</label>
 				</div>
 				<div className='formWrap-Div'>
 					<p>Titel der Anzeige:</p>
