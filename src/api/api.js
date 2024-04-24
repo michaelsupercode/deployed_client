@@ -1,1 +1,1 @@
-export const apiBaseUrl = process.env.REACT_APP_BACKEND_URL || "https://deployed-server-tkfh.onrender.com/"
+export const apiBaseUrl = process.env.API_URL || "https://deployed-server-tkfh.onrender.com/"
