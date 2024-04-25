@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { newToken } from "../../App";
 import { newUserId } from "../../App";
 import { Convert } from "mongo-image-converter";
-import { apiBaseUrl } from "../../api/api";
+import { apiUrl } from "../../api/api";
 
 const AddProduct = () => {
 	const { token } = useContext(newToken);
@@ -80,7 +80,7 @@ const AddProduct = () => {
 			};
 
 			axios
-				.post(apiBaseUrl + "/api/products/addProduct/", newProduct, {
+				.post(apiUrl + "/api/products/addProduct/", newProduct, {
 					headers: {
 						token,
 					},
