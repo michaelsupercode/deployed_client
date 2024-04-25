@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { apiBaseUrl } from "../../api/api";
+import { apiUrl } from "../../api/api";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -13,7 +13,7 @@ const Register = () => {
       email,
       password,
     };
-    fetch(apiBaseUrl + "/api/users/register", {
+    fetch(apiUrl + "/api/users/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
