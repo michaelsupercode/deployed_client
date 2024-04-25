@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { apiBaseUrl } from "../api/api";
+import { apiUrl } from "../api/api";
 
 const useDataFetch = () => {
   const [data, setData] = useState([]);
