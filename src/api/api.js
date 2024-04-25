@@ -1,1 +1,1 @@
-export const apiBaseUrl = process.env.API_URL || "https://deployed-server-tkfh.onrender.com/"
+export const apiBaseUrl = process.env.DB_URL || "https://test-servershop.onrender.com/"
