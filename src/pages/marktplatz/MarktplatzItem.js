@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import axios from "axios";
 import { newUserId, newToken, favorite } from "../../App";
 import { useContext } from "react";
-import { apiBaseUrl } from "../../api/api";
+import { apiUrl } from "../../api/api";
 
 const MarktplatzItem = (props) => {
   const { setFavoritesItem } = useContext(favorite);
@@ -13,7 +13,7 @@ const MarktplatzItem = (props) => {
   const addToWishlist = () => {
     axios
       .post(
-        apiBaseUrl + "/api/user/favorites",
+        apiUrl + "/api/user/favorites",
         { userObjId: userId, productObjId: productId },
         {
           headers: {
@@ -23,7 +23,7 @@ const MarktplatzItem = (props) => {
       )
       .then(() => {
         axios
-          .get(apiBaseUrl + "/api/user/favorites", {
+          .get(apiUrl + "/api/user/favorites", {
             headers: { token, userId },
           })
           .then((res) => {
@@ -35,7 +35,7 @@ const MarktplatzItem = (props) => {
   const deleteFromWishlist = () => {
     console.log("delete");
     axios
-      .delete(apiBaseUrl + "/api/user/favorites/", {
+      .delete(apiUrl + "/api/user/favorites/", {
         data: { userObjId: userId, productObjId: productId },
         headers: {
           token,
@@ -43,7 +43,7 @@ const MarktplatzItem = (props) => {
       })
       .then(() => {
         axios
-          .get(apiBaseUrl + "/api/user/favorites", {
+          .get(apiUrl + "/api/user/favorites", {
             headers: { token, userId },
           })
           .then((res) => {
