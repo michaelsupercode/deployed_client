@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { newToken, newUserId } from "../../App";
-import { apiBaseUrl } from "../../api/api";
+import { apiUrl } from "../../api/api";
 
 const Login = () => {
 	const [email, setEmail] = useState("");
@@ -20,7 +20,7 @@ const Login = () => {
 			password,
 		};
 		axios
-			.post(apiBaseUrl + "/api/users/login", {
+			.post(apiUrl + "/api/users/login", {
 				email: user.email,
 				password: user.password,
 			})
