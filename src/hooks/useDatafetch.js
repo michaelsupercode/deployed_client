@@ -10,7 +10,7 @@ const useDataFetch = () => {
     const fetchData = async () => {
       try {
         const { data: response } = await axios.get(
-          apiBaseUrl + "/api/products/allProducts"
+          apiUrl + "/api/products/allProducts"
         );
         setData(response);
       } catch (error) {
